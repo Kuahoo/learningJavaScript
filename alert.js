@@ -1,5 +1,3 @@
 'use strict';
-let name = "John"
-let admin = name;
-alert(admin);
-
+let promptText = prompt('What is you name?', '');
+alert(promptText);
