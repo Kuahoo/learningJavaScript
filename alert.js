@@ -1,6 +1,18 @@
 'use strict';
-let promptText = prompt('Pick any number', '');
-let message = (promptText > 0 ) ? 1 : 
-    (promptText < 0) ? -1 : 
-    (promptText === 0) ? 0 : NaN;
-alert(message);
+let message;
+
+if(login == 'Employee'){
+    message = 'Hello';
+}else if(login == 'Director'){
+    message = 'Greetings'
+}else if (login == ''){
+    message = 'No login';
+}else{
+    message = '';
+}
+
+//Rewrite 'if..else' into '?'
+let newMessage = (login == 'Employee') ? 'Hello' :
+    (login == 'Director') ? 'Greetings' :
+    (login == '') ? 'No login' : '';
+
